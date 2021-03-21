@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+    <head>
+       <meta charset="UTF-8">
+	   <title>Minha primeira calculadora</title>
+	   <link rel="stylesheet" href="estilo.css"></link>
+	   <script src="calcular.js"></script>
+    </head>
+    <body>
+       <div id="principal">
+     	   <div id="calculadora">
+	         <div id="titulo"><h2>MINHA PRIMEIRA CALCULADORA</h2></div>
+	    	 <div id="painel"> 
+             <section>
+	  	primeiro numero <input id="n1"> 
+		<br>
+		<br>
+		digite a operaçao<select name ="op" id = "op"><br>
+		                      <option value="+">+</option>
+		                      <option value="-">-</option>
+		                      <option value="*">*</option>
+		                      <option value="/">/</option>
+		                 </select><br>
+        <br>
+		segundo numero<input id="n2">
+		<br>
+		<br>
+        <button onclick="soma()">RESULTADO</button>
+		<br>
+		<br>
+		<div id="res"></div>
+	  </section>
+	  </div>
+	</div>
+    </div>	
+   </body>
+</html>
+
+#titulo{
+	color:red
+}	
+#painel{
+top:20px;
+position: relative;
+    margin-left: auto;
+    margin-right: auto;	
+}
+	
+
+#res{
+	position: relative;
+    margin-left: auto;
+    margin-right: auto;
+	width:100px;
+    height:20px;
+    border:solid 1px;
+    border-radius:20px;
+    text-align: center;
+	}
+
+#calculadora{
+	width: 100px;
+    height:100px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+	top:100px;
+	width:500px;
+    height:300px;
+    border:solid 1px;
+    border-radius:20px;
+    text-align: center;
+}
+
+#principal{
+	width: 1000px;
+    height: 300px;
+}
